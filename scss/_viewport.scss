@@ -1,0 +1,98 @@
+@media screen and (min-width:320px) { /* iPhone 1-5 */
+	
+	.viewport {
+		position: fixed;
+		top: auto;
+		bottom: 5px;
+		left: 5px;
+		right: auto;
+		background: #000;
+		color: #fff;
+		padding: 10px;
+		line-height: 1em;
+		z-index: 999999999999999;
+		font-size: 0.9rem;
+		opacity: 0.25;
+		transition: all .4s ease;
+	}
+	
+	.viewport::after {
+		content: "320px";
+	}
+	
+	body:hover > .viewport {
+		opacity: 1;
+	}
+	
+}
+
+@media screen and (min-width:375px) { /* iPhone 6 */
+
+	.viewport::after {
+		content: "375px";
+	}
+
+}
+
+@media screen and (min-width:414px) { /* iPhone 6+ */
+	
+	.viewport::after {
+		content: "414px";
+	}
+	
+}
+
+@media screen and (min-width:600px) { /* Tablet 7" portrait */
+	
+	.viewport::after {
+		content: "600px";
+	}
+	
+}
+
+@media screen and (min-width:768px) { /* iPad portrait */
+	
+	.viewport::after {
+		content: "768px";
+	}
+	
+}
+
+@media screen and (min-width:900px) { /* Tablet 7" landscape */
+	
+	.viewport::after {
+		content: "900px";
+	}
+	
+}
+
+@media screen and (min-width:1024px) { /* iPad" landscape */
+	
+	.viewport::after {
+		content: "1024px";
+	}
+
+}
+
+@media screen and (min-width:1140px) { /* TV */
+	
+	.viewport::after {
+		content: "1140px";
+	}
+
+}
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {
+        	.viewport::before {
+        		content: "\f00a";
+        		font-family: FontAwesome;
+    		    font-style: normal;
+    		    font-weight: normal;
+    		    text-decoration: inherit;
+    		    margin-right: 5px;
+        	}
+        }

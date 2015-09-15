@@ -1,0 +1,28 @@
+@media screen and (min-width:768px) {
+	body {
+		padding-top: 65px;
+	}	
+	
+	nav {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 999 !important;
+		width: 100%;
+		transition: all 0.3s ease-out;
+		-webkit-transform: translateY(0%);
+		-webkit-backface-visibility: hidden;
+	}
+	
+	nav.sticky {
+		transition: all .3s ease-in;
+		-webkit-transform: translateY(-100%);
+		-webkit-backface-visibility: hidden;
+	}
+	
+	nav.sticky:hover {
+		transition: all .3s ease;
+		-webkit-transform: translateY(0%);
+	}
+}
