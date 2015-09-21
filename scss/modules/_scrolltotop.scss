@@ -14,6 +14,14 @@
 	animation-delay: 0s;
 }
 
+.scrollToTop:hover {
+	background: #444;
+}
+
+.scrollToTop:hover::after {
+	color: #fff;
+}
+
 .scrollToTop::after {
 	content: "\f106";
 	font-family: FontAwesome;
