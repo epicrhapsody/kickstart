@@ -152,7 +152,8 @@ ul,
 ol,
 hr,
 img,
-iframe {
+iframe,
+.fluid-width-video-wrapper {
 	margin-bottom: 15px;
 }
 
@@ -189,10 +190,6 @@ iframe:last-child {
 		color: #999;
 	}
 	
-	.fluid-width-video-wrapper {
-		margin-bottom: 15px !important;
-	}
-	
 }
 
 @media screen and (min-width:375px) { /* iPhone 6 */
@@ -215,7 +212,6 @@ iframe:last-child {
 
 	section {
 		padding: 0px;
-		margin: 25px 0;
 	}
 	
 	.inner {
