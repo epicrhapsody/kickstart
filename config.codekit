@@ -11,7 +11,7 @@
 		"outputAbbreviatedPath": "\/apple-touch-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/css\/style.css": {
 		"fileType": 16,
@@ -194,7 +194,7 @@
 		"outputAbbreviatedPath": "\/screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/scss\/_animate.scss": {
 		"createSourceMap": 1,
@@ -381,7 +381,7 @@
 		"outputAbbreviatedPath": "\/tile-wide.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/tile.png": {
 		"fileType": 32768,
@@ -392,7 +392,7 @@
 		"outputAbbreviatedPath": "\/tile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		}
 	},
 "hooks": [
