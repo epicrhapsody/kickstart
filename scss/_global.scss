@@ -57,7 +57,6 @@ body {
 	width: 100%;
 	height: 100%;
 	font: 16px/21px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	line-height: 1.3;
 }
 
 h1,h2,h3,h4,h5 {
@@ -114,7 +113,7 @@ a:hover {
 }
 
 a:active {
-	
+
 }
 
 img {
@@ -169,27 +168,27 @@ iframe:last-child {
 /* Media Queries */
 
 @media screen and (min-width:320px) { /* iPhone 1-5 */
-	
+
 	.inner {
 		padding: 15px;
 		background: #fff;
 		position: relative;
 	}
-	
+
 	.github {
 		text-align: center;
 		margin-bottom: 25px;
 		font-size: 3em;
 	}
-	
+
 	.github a {
 		color: #bbb;
 	}
-	
+
 	.github a:hover {
 		color: #999;
 	}
-	
+
 }
 
 @media screen and (min-width:375px) { /* iPhone 6 */
@@ -197,15 +196,15 @@ iframe:last-child {
 }
 
 @media screen and (min-width:414px) { /* iPhone 6+ */
-	
+
 }
 
 @media screen and (min-width:600px) { /* Tablet 7" portrait */
-		
+
 	.inner {
 		padding: 20px;
 	}
-	
+
 }
 
 @media screen and (min-width:768px) { /* iPad portrait */
@@ -213,24 +212,24 @@ iframe:last-child {
 	section {
 		padding: 0px;
 	}
-	
+
 	.inner {
 		width: 700px;
 		margin: 0 auto;
 		border: 1px solid #ddd;
 		box-shadow: 0 0 5px rgba(0,0,0,0.1);
 	}
-	
-	
+
+
 }
 
 @media screen and (min-width:900px) { /* Tablet 7" landscape */
-	
+
 	.inner {
 		width: 830px;
 		padding: 25px;
 	}
-	
+
 }
 
 @media screen and (min-width:1024px) { /* iPad" landscape */
@@ -253,9 +252,9 @@ iframe:last-child {
 
 /* Retina Support */
 
-@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
-        only screen and (   min--moz-device-pixel-ratio: 1.5),  
-        only screen and (     -o-min-device-pixel-ratio: 3/2),  
-        only screen and (        min-device-pixel-ratio: 1.5),  
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+        only screen and (   min--moz-device-pixel-ratio: 1.5),
+        only screen and (     -o-min-device-pixel-ratio: 3/2),
+        only screen and (        min-device-pixel-ratio: 1.5),
         only screen and (min-resolution: 192dpi) {
         }
