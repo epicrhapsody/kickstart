@@ -1,10 +1,8 @@
-$(function() {
-    FastClick.attach(document.body);
-});
 
 $(document).ready(function() {
 	$('section').fitVids();
 	$('input, textarea').placeholder();
+   $('#form').validate();
 });
 
 $("").on('touch click', function(){
