@@ -10,7 +10,7 @@
 	.mean-container a.meanmenu-reveal {
 		display: none;
 	}
-	
+
 	.mean-container .mean-bar {
 		width: 100%;
 		position: relative;
@@ -20,7 +20,7 @@
 		height: 60px;
 		background: #111;
 	}
-	
+
 	.mean-container .mean-bar::after {
 		content: "www.company.de";
 		position: absolute;
@@ -31,7 +31,7 @@
 		padding: 17px;
 		font-size: 1.3em;
 	}
-	
+
 	.mean-container a.meanmenu-reveal {
 		width: 26px;
 		height: 26px;
@@ -45,7 +45,7 @@
 		display: block;
 		border-right: 1px solid #333;
 	}
-	
+
 	.mean-container a.meanmenu-reveal.meanclose::after {
 		content: "\f00d";
 		font-size: 1.5em;
@@ -55,14 +55,14 @@
 		font-weight: normal;
 		text-decoration: inherit;
 	}
-	
+
 	.mean-container a.meanmenu-reveal span {
 		display: block;
 		background: #fff;
 		height: 4px;
 		margin-top: 4px;
 	}
-	
+
 	.mean-container .mean-nav {
 		float: left;
 		display: inline-block;
@@ -70,31 +70,31 @@
 		margin-top: 60px;
 		height: auto;
 	}
-	
+
 	.mean-container .mean-nav .inner {
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	.mean-container .mean-nav .inner::after {
-		display: inline-block; 
+		display: inline-block;
 		width: 100%;
 	}
-	
+
 	.mean-container .mean-nav ul {
 		padding: 0;
 		margin: 0;
 		width: 100%;
 		list-style-type: none;
 	}
-	
+
 	.mean-container .mean-nav ul li {
 		position: relative;
 		float: left;
 		width: 100%;
 	}
-	
-	
+
+
 	.mean-container .mean-nav ul li a {
 		display: block;
 		float: left;
@@ -109,40 +109,40 @@
 		text-transform: uppercase;
 		transition: all .35s ease;
 	}
-	
+
 	.mean-container .mean-nav ul li li a {
 		width: 80%;
 		padding: 1em 10%;
 		background: #363636;
 		border-top: 1px solid #222;
 	}
-	
+
 	.mean-container .mean-nav ul li.mean-last a {
 		border-bottom: none;
 		margin-bottom: 0;
 	}
-	
+
 	.mean-container .mean-nav ul li li li a {
 		width: 70%;
 		padding: 1em 15%;
 		background: #444;
 		border-top: 1px solid #222;
 	}
-	
+
 	.mean-container .mean-nav ul li li li li a {
 		width: 60%;
 		padding: 1em 20%;
 	}
-	
+
 	.mean-container .mean-nav ul li li li li li a {
 		width: 50%;
 		padding: 1em 25%;
 	}
-	
+
 	.mean-container .mean-nav ul li a:hover {
 		transition: all .35s ease;
 	}
-	
+
 	.mean-container .mean-nav ul li a.mean-expand {
 		margin-top: 1px;
 		width: 32px;
@@ -158,7 +158,7 @@
 		border-left: 1px solid #111 !important;
 		font-size: 1.5em !important;
 	}
-	
+
 	.mean-container .mean-push {
 		float: left;
 		width: 100%;
@@ -166,19 +166,19 @@
 		margin: 0;
 		clear: both;
 	}
-	
+
 	.mean-nav .wrapper {
 		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
-	
+
 	.mean-container .mean-bar, .mean-container .mean-bar * {
 		-webkit-box-sizing: content-box;
 		-moz-box-sizing: content-box;
 		box-sizing: content-box;
 	}
-	
+
 	.mean-remove {
 		display: none !important;
 	}
@@ -188,41 +188,48 @@
 @media screen and (min-width:768px) { /* Desktop menu */
 
 	/*first level*/
-	
+
 	nav {
 		background: #222;
 	}
-	
+
+	nav.sticky {
+		background: #333;
+	}
+
 	nav ul.menu,
 	nav ul.menu ul,
 	nav ul.menu ul ul ul {
 		margin: 0;
 		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
-	
+
 	nav ul.menu li {
-		display: inline-block;
-		float: left;
+		flex: 0 auto;
 		line-height: 1em;
 		position: relative;
 	}
-	
+
 	nav ul.menu li a {
 		display: inline-block;
-		float: left;
 		padding: 25px;
 		color: #ddd;
 		border-right: 1px solid #000;
+		text-align: center;
+		width: 100%
 	}
-	
+
 	nav ul.menu li:first-child a {
 		border-left: 1px solid #000;
 	}
-	
+
 	nav ul.menu li:hover > a {
 		background: #292929;
 	}
-	
+
 	nav ul.menu li a.indicator::after {
 		content: "\f107";
 		font-family: FontAwesome;
@@ -231,7 +238,7 @@
 		text-decoration: inherit;
 		margin-left: 15px;
 	}
-	
+
 	nav ul.menu ul li a.indicator::after,
 	nav ul.menu ul ul li a.indicator::after,
 	nav ul.menu ul ul ul li a.indicator::after {
@@ -243,11 +250,13 @@
 		margin-left: 0px;
 		float: right;
 	}
-	
-	nav ul.menu ul {
+
+	nav ul.menu ul,
+	nav ul.menu ul ul,
+	nav ul.menu ul ul ul {
 		display: none;
 	}
-	
+
 	nav ul.menu li:hover > ul {
 		display: inherit;
 		position: absolute;
@@ -259,7 +268,7 @@
 		z-index: 1;
 		animation-duration: 0.3s;
 	}
-	
+
 	nav ul.menu ul li,
 	nav ul.menu ul li a {
 		clear: both;
@@ -267,35 +276,39 @@
 		width: 100%;
 		border: none;
 	}
-	
+
 	nav ul.menu ul li a {
 		background: #292929;
 		border-top: 1px solid #111;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: left;
 	}
-	
+
 	nav ul.menu ul li:hover > a {
 		background: #191919;
 	}
-	
+
 	nav ul.menu ul li:first-child a {
 		border: none;
 	}
-	
+
 	nav ul.menu ul li:hover > ul,
-	nav ul.menu ul ul li:hover > ul {
+	nav ul.menu ul ul li:hover > ul,
+	nav ul.menu ul ul ul li:hover > ul {
+		display: inherit;
 		top: 0;
 		right: 0;
 		left: 100%;
 	}
-	
+
 	nav ul.menu ul ul li a {
 		background: #333;
+
 	}
-	
+
 	nav ul.menu ul ul ul li a {
 		background: #393939;
 	}
-	
+
 }

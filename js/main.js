@@ -1,8 +1,23 @@
-
 $(document).ready(function() {
+	$('.scrollToTop').toggleClass("hide");
 	$('section').fitVids();
 	$('input, textarea').placeholder();
-   $('#form').validate();
+	$('#form').validate();
+});
+
+$(window).scroll(function(){
+	if ($(this).scrollTop() > 300) {
+		$('.scrollToTop').addClass("show").removeClass("hide").removeClass('fadeOutRight').addClass('animated fadeInRight');
+		$('nav').addClass("sticky");
+	} else {
+		$('.scrollToTop').addClass("hide").removeClass("show").removeClass("fadeInRight").addClass('fadeOutRight');
+		$('nav').removeClass("sticky");
+	}
+});
+
+$('.scrollToTop').click(function(){
+	$('html, body').animate({scrollTop : 0},350);
+	return false;
 });
 
 $("").on('touch click', function(){
