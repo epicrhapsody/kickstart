@@ -49,3 +49,13 @@ $(document).keyup(function(e) {
 		//Do stuff
     }
 });
+
+$(document).ready(function() {
+    if ($.cookie('noShowWelcome')) $('').addClass("hidden");
+    else {
+        $('').click(function() {
+            $('').addClass("hidden");
+            $.cookie('noShowWelcome', true, { expires: 1 });    
+        });
+    }
+});
