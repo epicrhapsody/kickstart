@@ -45,13 +45,17 @@ $(document).keyup(function(e) {
 });
 
 $(document).ready(function() {
-    if ($.cookie('noShowWelcome')) $('').hide();
+    if ($.cookie('cookiename')) $('').hide();
     else {
         $('').click(function() {
             $('').addClass("hidden");
 			var date = new Date();
 			date.setTime(date.getTime() + (60 * 1000));
-            $.cookie('noShowWelcome', true, { expires: date });    
+            $.cookie('cookiename', true, { expires: date });    
         });
     }
+});
+
+$('').on('touch click', function(){
+    $.removeCookie('cookiename');
 });
