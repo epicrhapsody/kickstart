@@ -44,14 +44,8 @@ $(document).keyup(function(e) {
     }
 });
 
-$(document).keyup(function(e) {
-     if (e.keyCode == 80) { // escape key maps to keycode `80`
-		//Do stuff
-    }
-});
-
 $(document).ready(function() {
-    if ($.cookie('noShowWelcome')) $('').addClass("hidden");
+    if ($.cookie('noShowWelcome')) $('').hide();
     else {
         $('').click(function() {
             $('').addClass("hidden");
