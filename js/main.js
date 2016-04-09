@@ -49,7 +49,9 @@ $(document).ready(function() {
     else {
         $('').click(function() {
             $('').addClass("hidden");
-            $.cookie('noShowWelcome', true, { expires: 1 });    
+			var date = new Date();
+			date.setTime(date.getTime() + (60 * 1000));
+            $.cookie('noShowWelcome', true, { expires: date });    
         });
     }
 });
