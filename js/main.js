@@ -3,6 +3,22 @@ $(document).ready(function() {
 	$('section').fitVids();
 	$('input, textarea').placeholder();
 	$('#form').validate();
+	$.extend( $.validator.messages, {
+	required: "Pflichtangabe",
+	maxlength: $.validator.format( "Geben Sie bitte maximal {0} Zeichen ein." ),
+	minlength: $.validator.format( "Geben Sie bitte mindestens {0} Zeichen ein." ),
+	rangelength: $.validator.format( "Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein." ),
+	email: "Keine gültige E-Mail Adresse.",
+	url: "Geben Sie bitte eine gültige URL ein.",
+	date: "Bitte geben Sie ein gültiges Datum ein.",
+	number: "Geben Sie bitte eine Nummer ein.",
+	digits: "Geben Sie bitte nur Ziffern ein.",
+	equalTo: "Bitte denselben Wert wiederholen.",
+	range: $.validator.format( "Geben Sie bitte einen Wert zwischen {0} und {1} ein." ),
+	max: $.validator.format( "Geben Sie bitte einen Wert kleiner oder gleich {0} ein." ),
+	min: $.validator.format( "Geben Sie bitte einen Wert größer oder gleich {0} ein." ),
+	creditcard: "Geben Sie bitte eine gültige Kreditkarten-Nummer ein."
+});
 });
 
 $(window).scroll(function(){
