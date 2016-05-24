@@ -42,7 +42,7 @@
 		},
 	"\/js\/jquery.cookie.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.cookie.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.cookie-min.js",
@@ -53,7 +53,7 @@
 		},
 	"\/js\/jquery.fitvids.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.fitvids.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.fitvids-min.js",
@@ -64,7 +64,7 @@
 		},
 	"\/js\/jquery.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery-min.js",
@@ -75,7 +75,7 @@
 		},
 	"\/js\/jquery.placeholder.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.placeholder.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.placeholder-min.js",
@@ -86,7 +86,7 @@
 		},
 	"\/js\/jquery.validate.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.validate.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.validate-min.js",
@@ -97,21 +97,10 @@
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.js",
 		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/min\/jquery-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/min\/jquery-min.js",
-		"outputAbbreviatedPath": "\/js\/min\/min\/jquery-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -130,7 +119,7 @@
 		},
 	"\/js\/navigation.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/navigation.js",
 		"outputAbbreviatedPath": "\/js\/min\/navigation-min.js",
@@ -144,15 +133,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/script.js",
-		"outputAbbreviatedPath": "\/js\/min\/script-min.js",
+		"outputAbbreviatedPath": "\/js\/script.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/script.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/script.min.js",
 		"outputAbbreviatedPath": "\/js\/min\/script.min-min.js",
@@ -384,6 +373,50 @@
 	],
 "lastSavedByUser": "Karsten vom Wege",
 "manualImportLinks": {
+	"\/js\/script.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery.placeholder.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery.validate.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery.fitvids.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery.cookie.js",
+			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/navigation.js",
+			"position": 5,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/main.js",
+			"position": 6,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
