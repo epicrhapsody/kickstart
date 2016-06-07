@@ -1,3 +1,13 @@
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       0,          // default
+  mobile:       false,       // default
+  live:         true        // default
+}
+)
+wow.init();
 $(document).ready(function() {
 	$('.scrollToTop').toggleClass("hide");
 	$('section').fitVids();
@@ -67,7 +77,7 @@ $(document).ready(function() {
             $('').addClass("hidden");
 			var date = new Date();
 			date.setTime(date.getTime() + (60 * 1000));
-            $.cookie('cookiename', true, { expires: date });    
+            $.cookie('cookiename', true, { expires: date });
         });
     }
 });
