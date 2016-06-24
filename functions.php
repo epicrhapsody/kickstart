@@ -66,7 +66,7 @@ add_filter( 'wp_calculate_image_sizes', 'adjust_image_sizes_attr', 10 , 2 );
 
 
 // xxxxxxxxxx Thumbnails and Image support xxxxxxxxxx
-if ( function_exists( 'add_theme_support' ) ) { 
+if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 150, 150, true );
     add_image_size( '320-thumb', 320, 9999, false );
@@ -168,11 +168,11 @@ add_shortcode('gallery', 'shortcode_gallery');
 
 // xxxxxxxxxx Pagination xxxxxxxxxx
 function pagination($pages = '', $range = 4)
-{  
-     $showitems = ($range * 2)+1;  
+{
+     $showitems = ($range * 2)+1;
      global $paged;
      if(empty($paged)) $paged = 1;
- 
+
      if($pages == '')
      {
          global $wp_query;
@@ -181,7 +181,7 @@ function pagination($pages = '', $range = 4)
          {
              $pages = 1;
          }
-     }   
+     }
      if(1 != $pages)
      {
          echo "<div class=\"pagination\">";
@@ -194,7 +194,7 @@ function pagination($pages = '', $range = 4)
                  echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
              }
          }
-          if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";  
+          if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";
          if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
          echo "</div>\n";
      }
@@ -204,8 +204,8 @@ function pagination($pages = '', $range = 4)
 // xxxxxxxxxx Clean up Wordpress xxxxxxxxxx
 	add_filter('show_admin_bar', '__return_false');
 	add_filter( 'use_default_gallery_style', '__return_false' );
-	remove_action( 'wp_head', 'rsd_link' ); 
-	remove_action( 'wp_head', 'wlwmanifest_link' ); 
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
 	remove_action( 'wp_head', 'index_rel_link' );
 	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
@@ -234,7 +234,11 @@ function disable_emojis_tinymce( $plugins ) {
 		return array();
 	}
 }
-add_action( 'widgets_init', 'my_remove_recent_comments_style' );
+function my_deregister_scripts(){
+    wp_deregister_script( 'wp-embed' );
+}
+    add_action( 'wp_footer', 'my_deregister_scripts' );
+    add_action( 'widgets_init', 'my_remove_recent_comments_style' );
 function my_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'  ) );
