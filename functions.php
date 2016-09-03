@@ -216,6 +216,7 @@ function pagination($pages = '', $range = 4)
 	remove_action( 'wp_head', 'feed_links_extra', 3);
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10);
 	remove_action( 'wp_head', 'rel_canonical');
+    remove_action( 'wp_head', 'wp_resource_hints', 2 );
 function disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
