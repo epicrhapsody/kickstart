@@ -405,13 +405,13 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/jquery.fitvids.js",
+			"linkedFileAbbreviatedPath": "\/js\/jquery.cookie.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/jquery.cookie.js",
+			"linkedFileAbbreviatedPath": "\/js\/jquery.fitvids.js",
 			"position": 4,
 			"type": 0
 			},
