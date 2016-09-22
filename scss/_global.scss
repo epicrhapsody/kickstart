@@ -137,9 +137,29 @@ iframe:last-child {
 
 @media screen and (min-width:320px) { /* iPhone 1-5 */
 
+	nav .toolbar {
+		display: none;
+	}
+
 	section {
 		background: #fff;
 		clear: both;
+	}
+
+	section.first {
+		background: #fff;
+	}
+
+	section.second {
+		background: #ddd;
+	}
+
+	section.third {
+		background: #ccc;
+	}
+
+	section.fourth {
+		background: #bbb;
 	}
 
 	footer {
@@ -176,7 +196,18 @@ iframe:last-child {
 @media screen and (min-width:768px) { /* iPad portrait */
 
 	body {
-		padding-top: 66px;
+		padding-top: 100px;
+	}
+
+	nav .toolbar {
+		display: block;
+		background: #111;
+		font-size: 0.9em;
+		color: #ccc;
+	}
+
+	nav .toolbar .inner {
+		padding: 7px 0;
 	}
 
 	.inner {
