@@ -22,7 +22,7 @@
     <body>
 	<span class="viewport"></span>
 
-		<nav class="wow fadeInDown" data-wow-offset="300" data-wow-duration="0.55s" data-wow-delay="0.25s">
+		<nav>
 			<div class="inner">
 				<ul class="menu">
 					<li><a href="">nav ul li a</a></li>
@@ -60,63 +60,10 @@
 				</ul>
 			</div>
 		</nav>
-        <section class="wow fadeInUp" data-wow-offset="300" data-wow-duration="0.55s">
+        <section>
            	<div class="inner">
            		<h2 class="kickstart"><i class="fa fa-rocket"></i> Kick<strong>Start</strong></h2>
            		<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
-
-                <hr />
-
-                <form id="form" action="http://vomwege.de/kickstart-mailer.php" accept-charset="utf-8" method="post">
-                    <?php if($_POST['robots'] != '') {
-                        echo 'Sorry, we don\'t like spammers here!';
-                    } else {
-                        // Process the the form
-                    } ?>
-                    <h3>Formular</h3>
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" placeholder="Name" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input id="email" name="email" type="email" placeholder="E-mail" required>
-                    </div>
-                    <div>
-                        <label for="telefon">Telefon</label>
-                        <input id="telefon" name="telefon" type="number" placeholder="Telefon" required>
-                    </div>
-                    <div>
-                        <label for="option">Select</label>
-                        <select name="option" required>
-                            <option></option>
-                            <option>Option A</option>
-                            <option>Option C</option>
-                            <option>Option D</option>
-                            <option>Option E</option>
-                            <option>Option F</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="choose">Radio</label>
-                        <input name="choose" type="radio" value="1" required><span class="spacer">Option 1</span>
-                        <input name="choose" type="radio" value="2"><span class="spacer">Option 2</span>
-                        <input name="choose" type="radio" value="3"><span class="spacer">Option 3</span>
-                    </div>
-                    <div>
-                        <label for="check">Checkbox</label>
-                        <input name="check" type="checkbox" value="4" required><span class="spacer">Option 4</span>
-                        <input name="check" type="checkbox" value="5"><span class="spacer">Option 5</span>
-                        <input name="check" type="checkbox" value="6"><span class="spacer">Option 6</span>
-                        <input name="check" type="checkbox" value="7"><span class="spacer">Option 7</span>
-                    </div>
-                    <div>
-                        <label for="nachricht">Nachricht</label>
-                        <textarea name="nachricht" required="" placeholder="Nachricht"></textarea>
-                    </div>
-                    <input style="display:none;" type="text" name="robots" value="" />
-                    <button type="submit">absenden</button>
-                </form>
            	</div>
         </section>
         <span class="scrollToTop"></span>

@@ -1,14 +1,5 @@
-wow = new WOW(
-  {
-  boxClass:     'wow',      // default
-  animateClass: 'animated', // default
-  offset:       0,          // default
-  mobile:       false,       // default
-  live:         true        // default
-}
-)
-wow.init();
 $(document).ready(function() {
+    FastClick.attach(document.body);
 	$('.scrollToTop').toggleClass("hide");
 	$('section').fitVids();
 	$('input, textarea').placeholder();
@@ -85,3 +76,5 @@ $(document).ready(function() {
 $('').on('touch click', function(){
     $.removeCookie('cookiename');
 });
+
+[].forEach.call(document.links, function(link) { link.addEventListener("click", function(event) { event.preventDefault(); window.location = this.href; }) });
