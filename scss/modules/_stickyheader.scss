@@ -1,0 +1,21 @@
+@media screen and (min-width:768px) {
+
+	nav {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: auto;
+		z-index: 999 !important;
+		width: 100%;
+		transition: all 0.3s ease;
+		-webkit-backface-visibility: hidden;
+	}
+
+	nav.sticky {
+	}
+
+	nav.sticky:hover {
+	}
+
+}
