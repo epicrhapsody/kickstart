@@ -23,12 +23,12 @@ $(document).ready(function() {
 });
 
 $(window).scroll(function(){
-	if ($(this).scrollTop() > 300) {
+	if ($(this).scrollTop() > 100) {
 		$('.scrollToTop').addClass("show").removeClass("hide").removeClass('fadeOutRight').addClass('animated fadeInRight');
-		$('nav').addClass("sticky");
+		$('nav,.toolbar').addClass("sticky");
 	} else {
 		$('.scrollToTop').addClass("hide").removeClass("show").removeClass("fadeInRight").addClass('fadeOutRight');
-		$('nav').removeClass("sticky");
+		$('nav,.toolbar').removeClass("sticky");
 	}
 });
 

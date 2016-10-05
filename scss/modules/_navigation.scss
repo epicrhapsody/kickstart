@@ -183,6 +183,12 @@
 		display: none !important;
 	}
 
+	nav .logo {
+		padding: 15px;
+		font-size: 1.75em;
+		line-height: 2.25em;
+	}
+
 }
 
 @media screen and (min-width:768px) { /* Desktop menu */
@@ -194,7 +200,12 @@
 	}
 
 	nav.sticky {
-		background: #333;
+
+	}
+
+	.toolbar.sticky {
+		margin-top: -34px;
+		transition: all 0.25s ease-in;
 	}
 
 	nav .inner {
@@ -202,6 +213,7 @@
 	}
 
 	nav .logo {
+		padding: 0;
 		flex: 1 1 auto;
 		color: #fff;
 		font-size: 1.75em;
@@ -230,7 +242,7 @@
 
 	nav ul.menu li a {
 		display: inline-block;
-		padding: 25px;
+		padding: 25px 10px;
 		color: #ddd;
 		text-align: center;
 		width: 100%;
@@ -320,6 +332,30 @@
 
 	nav ul.menu ul ul ul li a {
 		background: #393939;
+	}
+
+}
+
+@media screen and (min-width:900px) {
+
+	nav ul.menu li a {
+		padding: 25px 15px;
+	}
+
+}
+
+@media screen and (min-width:1024px) {
+
+	nav ul.menu li a {
+		padding: 25px 20px;
+	}
+
+}
+
+@media screen and (min-width:1140px) {
+
+	nav ul.menu li a {
+		padding: 25px;
 	}
 
 }
