@@ -85,6 +85,176 @@
 		"oAP": "\/fonts\/FontAwesome.otf",
 		"oF": 0
 		},
+	"\/fonts\/MyriadSetPro-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/MyriadSetPro-Bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Bold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Bold.woff2",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Medium.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Medium.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Medium.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Medium.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/MyriadSetPro-Medium.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Medium.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Medium.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Medium.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Medium.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Medium.woff2",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Semibold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Semibold.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Semibold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Semibold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/MyriadSetPro-Semibold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Semibold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Semibold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Semibold.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Semibold.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Semibold.woff2",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Text.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Text.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Text.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Text.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/MyriadSetPro-Text.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Text.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Text.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Text.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Text.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Text.woff2",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Thin.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Thin.eot",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Thin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Thin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/MyriadSetPro-Thin.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Thin.ttf",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Thin.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Thin.woff",
+		"oF": 0
+		},
+	"\/fonts\/MyriadSetPro-Thin.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/MyriadSetPro-Thin.woff2",
+		"oF": 0
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -133,15 +303,6 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/js\/fastclick.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/fastclick-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/jquery.cookie.js": {
 		"ft": 64,
 		"mi": 1,
@@ -163,7 +324,7 @@
 	"\/js\/jquery.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/js\/min\/jquery-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -284,6 +445,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_font-awesome.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_fonts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -428,7 +602,7 @@
 	"\/js\/script.js": [
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/fastclick.js",
+			"linkedFileAbbreviatedPath": "\/js\/jquery.js",
 			"position": 0,
 			"type": 0
 			},

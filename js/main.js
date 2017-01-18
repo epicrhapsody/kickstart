@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    FastClick.attach(document.body);
 	$('.scrollToTop').toggleClass("hide");
 	$('section').fitVids();
 	$('input, textarea').placeholder();
