@@ -9,62 +9,62 @@
 }
 
 input,label,select,button,textarea {
-margin:0;
-border:0;
-padding:0;
-display:inline-block;
-vertical-align:middle;
-white-space:normal;
-background:none;
-line-height:1;
-font-size:13px;
-font-family:Arial;
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+	line-height:1;
+	font-size:13px;
+	font-family:Arial;
 }
 
 input:focus {
-outline:0
+	outline:0
 }
 
 input,textarea {
--webkit-box-sizing:content-box;
--moz-box-sizing:content-box;
-box-sizing:content-box
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box
 }
 
 button,input[type=reset],input[type=button],input[type=submit],input[type=checkbox],input[type=radio],select {
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
 }
 
 input[type=checkbox],input[type=radio] {
-width:13px;
-height:13px
+	width:13px;
+	height:13px
 }
 
 input[type=search] {
--webkit-appearance:textfield;
--webkit-box-sizing:content-box
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box
 }
 
 ::-webkit-search-decoration {
-display:none
+	display:none
 }
 
 button,input[type="reset"],input[type="button"],input[type="submit"] {
-overflow:visible;
-width:auto
+	overflow:visible;
+	width:auto
 }
 
 ::-webkit-file-upload-button {
-padding:0;
-border:0;
-background:none
+	padding:0;
+	border:0;
+	background:none
 }
 
 textarea {
-vertical-align:top;
-overflow:auto
+	vertical-align:top;
+	overflow:auto
 }
 
 select[multiple] {
@@ -78,7 +78,10 @@ vertical-align:top
 form * {
 	transition: all 0.3s ease;
 	font-size: 1em;
-	line-height: inherit
+	line-height: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
 }
 
 form {
@@ -202,11 +205,11 @@ form select[multiple]:focus {
 
 form select[multiple] option {
 	padding: 10px;
-	border-bottom: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc;
 }
 
 form select[multiple] option:last-of-type {
-	border-bottom: none !important; 
+	border-bottom: none !important;
 }
 
 form select option:selected {
@@ -223,7 +226,7 @@ form input[type=radio] {
 form input[type=radio]:focus,
 form input[type=radio]:checked {
 	background-position: center bottom;
-	
+
 }
 
 form input[type=radio] {
@@ -245,7 +248,7 @@ form input[type=checkbox] {
 form input[type=checkbox]:focus,
 form input[type=checkbox]:checked {
 	background-position: center bottom;
-	
+
 }
 
 form input[type=checkbox] {
@@ -267,7 +270,7 @@ form button[type=submit] {
 	color: #fff;
 }
 
-form button[type=submit]:focus {	
+form button[type=submit]:focus {
 	background: #111;
 }
 
