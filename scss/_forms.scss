@@ -243,11 +243,11 @@ form input[type=checkbox] {
 	width: 25px;
 	height: 25px;
 	cursor: pointer;
+	background-position: center top;
 }
 
-form input[type=checkbox]:focus,
 form input[type=checkbox]:checked {
-	background-position: center bottom;
+	background: transparent url(../img/forms/checkbox-bg.svg) center bottom no-repeat;
 
 }
 

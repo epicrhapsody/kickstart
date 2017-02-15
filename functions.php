@@ -12,6 +12,54 @@ function my_jquery_enqueue() {
 }
 
 
+// // xxxxxxxxxx Woocommerce Breadcrumbs xxxxxxxxxx
+// add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
+// function jk_woocommerce_breadcrumbs() {
+//     return array(
+//             'delimiter'   => '<span class="delimiter"></span>',
+//             'wrap_before' => '<div class="breadcrumbs"><div class="inner"><div class="woocommerce-breadcrumbs" itemprop="breadcrumb">',
+//             'wrap_after'  => '</div></div></div>',
+//             'before'      => '',
+//             'after'       => '',
+//             'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+//         );
+// }
+//
+// // xxxxxxxxxx Hide Woocommerce xxxxxxxxxx
+//  function wpse_131562_redirect() {
+//      if (
+//          ! is_user_logged_in()
+//          && (is_woocommerce() || is_cart() || is_checkout())
+//      ) {
+//          wp_redirect(home_url());
+//          exit;
+//      }
+//  }
+//  add_action('template_redirect', 'wpse_131562_redirect');
+//
+//
+// // xxxxxxxxxx Disable Woocommerce CSS xxxxxxxxxx
+// add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+// xxxxxxxxxx RoyalSlider xxxxxxxxxx
+//register_new_royalslider_files(1);
+
+// xxxxxxxxxx Login + Logout Redirects xxxxxxxxxx
+// function login_redirect( $redirect_to, $request, $user ){
+//     return home_url('shop');
+// }
+// add_filter( 'login_redirect', 'login_redirect', 10, 3 );
+//
+// function logout_redirect( $redirect_to, $request, $user ){
+//     return home_url();
+// }
+// add_filter( 'logout_redirect', 'logout_redirect', 10, 3 );
+//
+// add_action( 'after_setup_theme', 'woocommerce_support' );
+// function woocommerce_support() {
+//     add_theme_support( 'woocommerce' );
+// }
+
 // xxxxxxxxxx Custom Login Logo xxxxxxxxxx
 function my_login_logo() { ?>
     <style type="text/css">
@@ -35,10 +83,11 @@ function my_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-
-// xxxxxxxxxx Rest API xxxxxxxxxx
-wp_enqueue_script( 'wp-api' );
-
+// xxxxxxxxxx Excerpt Length xxxxxxxxxx
+    function wpdocs_custom_excerpt_length( $length ) {
+        return 22;
+    }
+    add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 // xxxxxxxxxx HTML Search Form xxxxxxxxxx
 add_theme_support( 'html5', array( 'search-form' ) );
@@ -216,7 +265,7 @@ function pagination($pages = '', $range = 4)
 	remove_action( 'wp_head', 'feed_links_extra', 3);
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10);
 	remove_action( 'wp_head', 'rel_canonical');
-    remove_action( 'wp_head', 'wp_resource_hints', 2 );
+  remove_action( 'wp_head', 'wp_resource_hints', 2 );
 function disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
@@ -237,6 +286,7 @@ function disable_emojis_tinymce( $plugins ) {
 }
 function my_deregister_scripts(){
     wp_deregister_script( 'wp-embed' );
+    wp_deregister_script( 'backbone' );
 }
     add_action( 'wp_footer', 'my_deregister_scripts' );
     add_action( 'widgets_init', 'my_remove_recent_comments_style' );
