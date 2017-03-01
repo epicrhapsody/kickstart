@@ -1,8 +1,8 @@
-$main-light: #444;
+$main-light: #555;
 $main: #333;
 $main-dark: #222;
 $main-darkest: #111;
-$gradient: linear-gradient(to bottom, $main, $main-light);
+$gradient: linear-gradient(to bottom, $main-dark, $main);
 $rounded: 5px;
 
 @charset "utf-8";
