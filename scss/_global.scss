@@ -9,7 +9,7 @@ html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	background: #ccc;
+	background: $main;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -76,12 +76,11 @@ a,
 a:link,
 a:visited {
 	text-decoration: none;
-	color: #666;
 	transition: all .25s ease;
 }
 
 a:hover {
-	color: #111;
+
 }
 
 a:active {
@@ -142,12 +141,7 @@ iframe:last-child {
 @media screen and (min-width:320px) { /* iPhone 1-5 */
 
 	.inner {
-		padding: 15px;
 		position: relative;
-	}
-
-	nav.main .toolbar {
-		display: none;
 	}
 
 	section.main {
@@ -155,8 +149,68 @@ iframe:last-child {
 		clear: both;
 	}
 
+	section.main .inner {
+	}
+
+	section.main .inner article {
+		background: #eee;
+		padding: 15px;
+	}
+
+	section.main .inner aside {
+		background: $main;
+		color: #fff;
+		padding: 15px;
+	}
+
 	footer.main {
 		background: #ddd;
+		margin-bottom: 100px;
+	}
+
+	footer.main .inner {
+		display: flex;
+		padding: 0;
+		flex-direction: column;
+	}
+
+	footer.main .inner .left {
+		flex: 1 1 auto;
+		padding: 10px 15px;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid #bbb;
+	}
+
+	footer.main .inner .right {
+		flex: 1 1 auto;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+	}
+
+	footer.main .submenu {
+		list-style-type: none;
+		margin: 0;
+		display: flex;
+	}
+
+	footer.main .submenu li {
+	}
+
+	footer.main .submenu li a {
+		display: inline-block;
+		padding: 10px;
+		margin-right: 10px;
+		color: $main-dark;
+	}
+
+	footer.main .submenu li a:hover {
+		color: #222;
+	}
+
+	footer.main .submenu li:last-child a {
+		margin-right: 0;
 	}
 
 }
@@ -168,6 +222,19 @@ iframe:last-child {
 @media screen and (min-width:414px) { /* iPhone 6+ */
 
 	.inner {
+
+	}
+
+	footer.main .inner .left,
+	footer.main .inner .right {
+		padding: 10px 20px;
+	}
+
+	section.main .inner article {
+		padding: 20px;
+	}
+
+	section.main .inner aside {
 		padding: 20px;
 	}
 
@@ -175,7 +242,16 @@ iframe:last-child {
 
 @media screen and (min-width:600px) { /* Tablet 7" portrait */
 
-	.inner {
+	footer.main .inner .left,
+	footer.main .inner .right {
+		padding: 20px 25px;
+	}
+
+	section.main .inner article {
+		padding: 25px;
+	}
+
+	section.main .inner aside {
 		padding: 25px;
 	}
 
@@ -184,27 +260,40 @@ iframe:last-child {
 @media screen and (min-width:768px) { /* iPad portrait */
 
 	body {
-		padding-top: 100px;
-	}
-
-	nav.main .toolbar {
-		display: block;
-		background: #111;
-		font-size: 0.9em;
-		color: #ccc;
-		transition: all 0.25s ease-out;
-	}
-
-	nav.main .toolbar .inner {
-		padding: 7px 0;
+		padding-top: 99px;
 	}
 
 	.inner {
 		width: 700px;
 		margin: 0 auto;
-		padding: 25px 0;
 	}
 
+	section.main {
+		padding: 15px 0;
+	}
+
+	section.main article {
+		margin-bottom: 15px;
+	}
+
+	footer.main .inner {
+		flex-direction: row;
+	}
+
+	footer.main .inner .left,
+	footer.main .inner .right {
+		padding: 20px 0;
+		display: inline-block;
+	}
+
+	footer.main .inner .right {
+		text-align: right;
+	}
+
+	footer.main .submenu li a {
+		display: inline-block;
+		padding: 0px;
+	}
 
 }
 
@@ -212,7 +301,29 @@ iframe:last-child {
 
 	.inner {
 		width: 830px;
-		padding: 30px 0;
+	}
+
+	section.main {
+		padding: 20px 0;
+	}
+
+	section.main .inner {
+		display: flex;
+	}
+
+	section.main .inner article {
+		flex: auto;
+		margin-bottom: 0;
+		order: 1;
+	}
+
+	section.main .inner aside {
+		flex: 0 0 250px;
+		order: 2;
+	}
+
+	footer.main .inner .left {
+		border-bottom: none;
 	}
 
 }
@@ -221,14 +332,56 @@ iframe:last-child {
 
 	.inner {
 		width: 980px;
-		padding: 35px 0;
+	}
+
+	section.main {
+		padding: 25px 0;
+	}
+
+	section.main .inner aside {
+		flex: 0 0 275px;
 	}
 
 }
 
 @media screen and (min-width:1140px) { /* TV */
+
 	.inner {
 		width: 1024px;
+	}
+
+	section.main {
+		padding: 30px 0;
+	}
+
+	section.main .inner article {
+		padding: 30px;
+	}
+
+	section.main .inner aside {
+		flex: 0 0 300px;
+		padding: 30px;
+	}
+
+}
+
+@media screen and (min-width:1280px) { /* TV */
+
+	.inner {
+		width: 1140px;
+	}
+
+	section.main {
+		padding: 35px 0;
+	}
+
+	section.main .inner article {
+		padding: 35px;
+	}
+
+	section.main .inner aside {
+		flex: 0 0 300px;
+		padding: 35px;
 	}
 
 }

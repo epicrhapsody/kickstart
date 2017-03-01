@@ -7,7 +7,7 @@
 		"uuidString": "06154F8C-406B-4E40-ABF7-09CD9ED77988"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
 	"\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -122,6 +122,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/img\/forms\/select-bg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/nav-toggle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/nav-toggle.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -366,19 +376,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_scrolltotop.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/_stickyheader.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_stickyheader.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1350,6 +1347,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1678,6 +1679,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -1771,6 +1776,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},

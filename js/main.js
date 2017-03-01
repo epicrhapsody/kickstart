@@ -19,6 +19,19 @@ $(document).ready(function() {
 	min: $.validator.format( "Geben Sie bitte einen Wert größer oder gleich {0} ein." ),
 	creditcard: "Geben Sie bitte eine gültige Kreditkarten-Nummer ein."
 });
+$.validator.addMethod("valueNotEquals", function(value, element, arg){
+  return arg != value;
+ }, "Value must not equal arg.");
+
+ // configure your validation
+ $("#form").validate({
+  rules: {
+   SelectName: { valueNotEquals: "-1" }
+  },
+  messages: {
+   SelectName: { valueNotEquals: "Please select an item!" }
+  }
+ });
 });
 
 $(window).scroll(function(){

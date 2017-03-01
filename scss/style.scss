@@ -1,3 +1,10 @@
+$main-light: #444;
+$main: #333;
+$main-dark: #222;
+$main-darkest: #111;
+$gradient: linear-gradient(to bottom, $main, $main-light);
+$rounded: 5px;
+
 @charset "utf-8";
 @import "_normalize.scss";
 @import "_reset.scss";
@@ -5,7 +12,6 @@
 @import "_animate.scss";
 @import "_font-awesome.scss";
 @import "_forms.scss";
-@import "_global.scss";
-@import "_navigation.scss";
 @import "_scrolltotop.scss";
-@import "_stickyheader.scss";
+@import "_navigation.scss";
+@import "_global.scss";

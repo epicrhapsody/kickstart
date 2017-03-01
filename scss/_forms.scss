@@ -306,3 +306,14 @@ form select.error {
 	background-image: none;
 	border: 1px solid #c00;
 }
+
+
+form span.checkbox,
+form span.radio {
+	display: block;
+	margin-right: 15px;
+}
+
+form span.checkbox:last-of-type,
+form span.radio:last-of-type {
+}
