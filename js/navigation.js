@@ -245,7 +245,7 @@ $(window).on('load resize', function(){
 	}
 });
 $(document).ready(function() {
-	$('nav ul.menu ul').addClass('animated fadeIn');
+	//$('nav ul.menu ul').addClass('animated fadeIn');
 	$('nav ul').find('li:has(ul)').children('a').removeAttr('href').addClass("indicator");
 	$('nav').meanmenu({
 		meanMenuContainer: 'body',

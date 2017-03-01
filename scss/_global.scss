@@ -166,7 +166,6 @@ iframe:last-child {
 	}
 
 	section.main .inner .bottom {
-		background: #555;
 		color: #fff;
 	}
 
@@ -179,15 +178,15 @@ iframe:last-child {
 	section.main .inner .bottom .columns .col-2,
 	section.main .inner .bottom .columns .col-3 {
 		padding: 15px;
-		background: #444;
+		background: $main-darkest;
 	}
 
 	section.main .inner .bottom .columns .col-1 {
-		border-bottom: 1px solid #222;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
 	}
 
 	section.main .inner .bottom .columns .col-2 {
-		border-bottom: 1px solid #222;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
 	}
 
 	section.main .inner .bottom .columns .col-3 {
@@ -378,7 +377,7 @@ iframe:last-child {
 
 	section.main .inner .bottom .columns .col-2,
 	section.main .inner .bottom .columns .col-3 {
-		border-left: 1px solid #222;
+		border-left: 1px solid rgba(0,0,0,0.25);
 	}
 
 	footer.main .inner .left {
