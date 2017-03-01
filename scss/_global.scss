@@ -144,9 +144,29 @@ iframe:last-child {
 		position: relative;
 	}
 
-	section.main {
+	section.main,
+	section.slider {
 		background: #fff;
 		clear: both;
+	}
+
+	section.slider {
+		height: 160px;
+		background: #333;
+		color: #ddd;
+	}
+
+	section.slider .inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		height: 100%;
+	}
+
+	section.slider .inner h3 {
+		flex: 0 0 auto;
+		margin: 0;
 	}
 
 	section.main .inner {
@@ -254,8 +274,8 @@ iframe:last-child {
 
 @media screen and (min-width:414px) { /* iPhone 6+ */
 
-	.inner {
-
+	section.slider {
+		height: 180px;
 	}
 
 	footer.main .inner .left,
@@ -280,6 +300,10 @@ iframe:last-child {
 }
 
 @media screen and (min-width:600px) { /* Tablet 7" portrait */
+
+	section.slider {
+		height: 200px;
+	}
 
 	footer.main .inner .left,
 	footer.main .inner .right {
@@ -308,10 +332,14 @@ iframe:last-child {
 		padding-top: 99px;
 	}
 
+	section.slider {
+		height: 230px;
+	}
+
 	.inner {
 		margin: 0 auto;
 		width: 92%;
-		max-width: 1100px;
+		max-width: 1200px;
 	}
 
 	section.main {
@@ -343,6 +371,10 @@ iframe:last-child {
 }
 
 @media screen and (min-width:900px) { /* Tablet 7" landscape */
+
+	section.slider {
+		height: 250px;
+	}
 
 	section.main {
 		padding: 20px 0;
@@ -380,7 +412,7 @@ iframe:last-child {
 
 	section.main .inner .bottom .columns .col-2,
 	section.main .inner .bottom .columns .col-3 {
-		
+
 	}
 
 	footer.main .inner .left {
@@ -391,6 +423,10 @@ iframe:last-child {
 
 @media screen and (min-width:1024px) { /* iPad" landscape */
 
+	section.slider {
+		height: 270px;
+	}
+
 	section.main {
 		padding: 25px 0;
 	}
@@ -398,6 +434,10 @@ iframe:last-child {
 }
 
 @media screen and (min-width:1140px) { /* TV */
+
+	section.slider {
+		height: 290px;
+	}
 
 	section.main {
 		padding: 30px 0;
@@ -420,6 +460,10 @@ iframe:last-child {
 }
 
 @media screen and (min-width:1280px) { /* TV */
+
+	section.slider {
+		height: 320px;
+	}
 
 	section.main {
 		padding: 35px 0;
