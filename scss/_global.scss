@@ -15,8 +15,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
 	box-sizing: inherit;
 	outline: none;
 }
@@ -73,7 +73,6 @@ cite {
 }
 
 a,
-a:link,
 a:visited {
 	text-decoration: none;
 	transition: all .25s ease;
@@ -152,8 +151,8 @@ iframe:last-child {
 
 	section.slider {
 		height: 160px;
-		background: #333;
-		color: #ddd;
+		background: #191919;
+		color: #999;
 	}
 
 	section.slider .inner {

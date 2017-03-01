@@ -1,11 +1,8 @@
 @media screen and (min-width:320px) { /* Mobile menu */
 
-	nav.main .inner {
+	.mean-container .inner {
 		border: none;
 		box-shadow: none;
-	}
-
-	.mean-container .toolbar {
 	}
 
 	.mean-container .toolbar .inner {
@@ -30,7 +27,7 @@
 		box-sizing: border-box !important;
 		padding: 15px;
 		display: inline-block;
-		font-size: 2.5em;
+		font-size: 2.2em;
 		width: 100%;
 		color: #fff;
 		background: $main-dark;
