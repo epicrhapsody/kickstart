@@ -157,16 +157,18 @@ iframe:last-child {
 	section.main .inner article {
 		background: #eee;
 		padding: 15px;
+		order: 1;
 	}
 
 	section.main .inner aside {
 		background: $main;
 		color: #fff;
 		padding: 15px;
+		order: 2;
 	}
 
 	section.main .inner .bottom {
-		color: #fff;
+		order: 3;
 	}
 
 	section.main .inner .bottom .columns {
@@ -178,18 +180,19 @@ iframe:last-child {
 	section.main .inner .bottom .columns .col-2,
 	section.main .inner .bottom .columns .col-3 {
 		padding: 15px;
-		background: $main-darkest;
+
 	}
 
 	section.main .inner .bottom .columns .col-1 {
-		border-bottom: 1px solid rgba(0,0,0,0.25);
+		background: #ccc;
 	}
 
 	section.main .inner .bottom .columns .col-2 {
-		border-bottom: 1px solid rgba(0,0,0,0.25);
+		background: #ddd;
 	}
 
 	section.main .inner .bottom .columns .col-3 {
+		background: #ccc;
 	}
 
 
@@ -377,7 +380,7 @@ iframe:last-child {
 
 	section.main .inner .bottom .columns .col-2,
 	section.main .inner .bottom .columns .col-3 {
-		border-left: 1px solid rgba(0,0,0,0.25);
+		
 	}
 
 	footer.main .inner .left {
