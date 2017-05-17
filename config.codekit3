@@ -7,7 +7,7 @@
 		"uuidString": "06154F8C-406B-4E40-ABF7-09CD9ED77988"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25813",
 "files": {
 	"\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -15,7 +15,10 @@
 		"oA": 0,
 		"oAP": "\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/browserconfig.xml": {
 		"ft": 8192,
@@ -83,12 +86,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/fonts\/FontAwesome.otf",
-		"oF": 0
-		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/functions.php",
 		"oF": 0
 		},
 	"\/img\/.gitignore": {
@@ -239,12 +236,6 @@
 		"oAP": "\/js\/script.min.js.map",
 		"oF": 0
 		},
-	"\/kickstart-mailer.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/kickstart-mailer.php",
-		"oF": 0
-		},
 	"\/kickstart.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -254,27 +245,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/screenshot.png": {
-		"ft": 32768,
-		"iS": 10088,
-		"oA": 0,
-		"oAP": "\/screenshot.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/scss\/_animate.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_animate.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"\/scss\/_font-awesome.scss": {
 		"aP": 0,
@@ -354,32 +324,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/_reset.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_reset.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/_scrolltotop.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_scrolltotop.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/_viewport.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -412,7 +356,10 @@
 		"oA": 0,
 		"oAP": "\/tile-wide.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/tile.png": {
 		"ft": 32768,
@@ -420,7 +367,55 @@
 		"oA": 0,
 		"oAP": "\/tile.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wordpress\/footer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wordpress\/footer.php",
+		"oF": 0
+		},
+	"\/wordpress\/functions.php": {
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/wordpress\/functions.php",
+		"oF": 0
+		},
+	"\/wordpress\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wordpress\/header.php",
+		"oF": 0
+		},
+	"\/wordpress\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wordpress\/index.php",
+		"oF": 0
+		},
+	"\/wordpress\/screenshot.png": {
+		"ft": 32768,
+		"iS": 10088,
+		"oA": 0,
+		"oAP": "\/wordpress\/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wordpress\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wordpress\/style-min.css",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [
@@ -1147,6 +1142,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -1431,6 +1430,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -1626,6 +1629,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -2226,7 +2233,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2249,14 +2257,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -2319,7 +2319,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,

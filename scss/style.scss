@@ -7,12 +7,10 @@ $rounded: 5px;
 
 @charset "utf-8";
 @import "_normalize.scss";
-@import "_reset.scss";
-@import "_viewport.scss";
-@import "_animate.scss";
 @import "_font-awesome.scss";
 @import "_forms.scss";
-@import "_scrolltotop.scss";
 @import "_navigation.scss";
 @import "_global.scss";
-@import "_lint.scss";
+
+//@import "_viewport.scss";
+//@import "_lint.scss";
